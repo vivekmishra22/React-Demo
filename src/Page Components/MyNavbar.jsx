@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Navbar, Nav, NavDropdown, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const MyNavbar = () => {
     return (
@@ -11,7 +12,7 @@ const MyNavbar = () => {
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="m-auto">
-                                <Nav.Link href="#home">Home</Nav.Link>
+                                <Link to='/' className='text-decoration-none'><Nav.Link href="#home">Home</Nav.Link></Link>
                                 <Nav.Link href="#link">Link</Nav.Link>
                                 <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                                     <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
@@ -26,8 +27,8 @@ const MyNavbar = () => {
                                 </NavDropdown>
                             </Nav>
                             <div className="Navbar-button d-flex gap-2">
-                                <Button variant="primary">Register</Button>
-                                <Button variant="success">Log In</Button>
+                                <Link to='/register'><Button variant="primary">Register</Button></Link>
+                                <Link to='/login'><Button variant="success">Log In</Button></Link>
                             </div>
                         </Navbar.Collapse>
                     </Navbar>

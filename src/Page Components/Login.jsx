@@ -7,7 +7,7 @@ const Login = () => {
             <Container>
                 <Row>
                     <Col md={4} className='m-auto'>
-                        <Form>
+                        <Form className='form-control p-4'>
                             <Form.Group className="mb-3" controlId="formBasicEmail">
                                 <Form.Label>Username</Form.Label>
                                 <Form.Control type="email" placeholder="Enter username" />
