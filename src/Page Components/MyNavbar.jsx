@@ -13,7 +13,7 @@ const MyNavbar = () => {
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="m-auto">
                                 <Link to='/' className='text-decoration-none'><Nav.Link href="#home">Home</Nav.Link></Link>
-                                <Nav.Link href="#link">Link</Nav.Link>
+                                <Link to='/link'><Nav.Link href="#link">Link</Nav.Link></Link>
                                 <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                                     <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.2">
